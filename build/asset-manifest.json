@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/cherryblog/static/css/main.67b0dce0.chunk.css",
-    "main.js": "/cherryblog/static/js/main.d9c8b11b.chunk.js",
-    "main.js.map": "/cherryblog/static/js/main.d9c8b11b.chunk.js.map",
+    "main.js": "/cherryblog/static/js/main.11012ce6.chunk.js",
+    "main.js.map": "/cherryblog/static/js/main.11012ce6.chunk.js.map",
     "runtime-main.js": "/cherryblog/static/js/runtime-main.a02973e5.js",
     "runtime-main.js.map": "/cherryblog/static/js/runtime-main.a02973e5.js.map",
-    "static/js/2.4b5dac70.chunk.js": "/cherryblog/static/js/2.4b5dac70.chunk.js",
-    "static/js/2.4b5dac70.chunk.js.map": "/cherryblog/static/js/2.4b5dac70.chunk.js.map",
+    "static/js/2.6ed62c15.chunk.js": "/cherryblog/static/js/2.6ed62c15.chunk.js",
+    "static/js/2.6ed62c15.chunk.js.map": "/cherryblog/static/js/2.6ed62c15.chunk.js.map",
     "index.html": "/cherryblog/index.html",
-    "precache-manifest.eef32b3ec4ff608812699a485d1edcdd.js": "/cherryblog/precache-manifest.eef32b3ec4ff608812699a485d1edcdd.js",
+    "precache-manifest.8571925b9855a706060fc36f37a11430.js": "/cherryblog/precache-manifest.8571925b9855a706060fc36f37a11430.js",
     "service-worker.js": "/cherryblog/service-worker.js",
     "static/css/main.67b0dce0.chunk.css.map": "/cherryblog/static/css/main.67b0dce0.chunk.css.map",
-    "static/js/2.4b5dac70.chunk.js.LICENSE.txt": "/cherryblog/static/js/2.4b5dac70.chunk.js.LICENSE.txt"
+    "static/js/2.6ed62c15.chunk.js.LICENSE.txt": "/cherryblog/static/js/2.6ed62c15.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a02973e5.js",
-    "static/js/2.4b5dac70.chunk.js",
+    "static/js/2.6ed62c15.chunk.js",
     "static/css/main.67b0dce0.chunk.css",
-    "static/js/main.d9c8b11b.chunk.js"
+    "static/js/main.11012ce6.chunk.js"
   ]
 }
