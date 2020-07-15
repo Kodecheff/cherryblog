@@ -10,7 +10,7 @@ function Food() {
       <Navbar />
       
       <div className="foodPage">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-lg-9 col-md-9 col-sm-9 col-xs-12">
               <h6>Food</h6>

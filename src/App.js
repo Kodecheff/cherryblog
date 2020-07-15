@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from './categories/Home';
 import Food from './categories/Food';
 import './App.css';
@@ -7,12 +7,12 @@ import './App.css';
 
 function App() {
   return(
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/food" component={Food} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
