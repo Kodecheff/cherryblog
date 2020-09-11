@@ -24,35 +24,6 @@
   color: aliceblue;
 }
 
-/*=============== Home page ===========*/
-.category{
-  margin: 20px 0px;
-}
-.category-bg{
-  padding: 145px 0px 5px 0px;
-}
-.category h2{
-  border-left: 3px solid rgb(83, 3, 83);
-  padding-left: 10px;
-}
-.category .category-bg .headline{
-  margin-left: 20px;
-  line-height: 40px;
-}
-.category .heading{
-  background-color: purple;
-  padding: 6px;
-  color: aliceblue;
-  border-radius: 10px;
-}
-.generalhealth .headline{
-  border: 1px solid;
-  width: 250px;
-  height: 280px;
-  border-radius: 10px;
-  margin: 15px;
-}
-
 /*================Footer==================*/
 .footer{
   background-color: rgb(51, 49, 49);
@@ -73,24 +44,3 @@ footer{
   background-color: rgb(36, 35, 35);
   padding: 10px 10px;
 }
-
-
-/*****************============= FOOD PAGE ============*************/
-.foodPage{
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-.foodPage .foodHeadline{
-  border: 1px solid;
-  width: 200px;
-  height: 250px;
-  border-radius: 10px;
-  margin: auto;
-  margin-top: 13px;
-  /* margin-right: 1px; */
-}
-
-
-/***********=======================
-  *********======MEDIA QUERY=======
-*/

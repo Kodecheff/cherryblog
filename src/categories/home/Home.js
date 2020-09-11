@@ -1,9 +1,18 @@
-import React from 'react';
-import Navbar from '../components/navbar';
-import Topnav from '../components/topnav';
-import Footer from '../components/footer';
+import React, {useState} from 'react';
+import Navbar from '../../components/navbar';
+import Topnav from '../../components/topnav';
+import Footer from '../../components/footer';
+import './home.css'
 
 function Home() {
+  const [news, setNews] = useState([])
+
+  // fetch('localhost:4000/news')
+  // .then(res => {
+  //   // setNews(news)
+  //   console.log(news)
+  // })
+
   return(
     <div>
       <Topnav />

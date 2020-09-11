@@ -1,0 +1,14 @@
+/*****************============= FOOD PAGE ============*************/
+.foodPage{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.foodPage .foodHeadline{
+  border: 1px solid;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 13px;
+  /* margin-right: 1px; */
+}
