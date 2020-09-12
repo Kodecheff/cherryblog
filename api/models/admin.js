@@ -40,11 +40,20 @@ const adminSchema = mongoose.Schema({
   }]
 })
 
+adminSchema.methods.toJSON = function(){
+  const admin = this
+
+  const adminObject = admin.toObject()
+  delete adminObject.password
+  delete adminObject.tokens
+
+  return adminObject
+}
 
 /* ---------------- Generate auth token ----------------- */
 adminSchema.methods.generateAuthToken = async function(){
   const admin = this
-  const token = await jwt.sign({_id: admin._id.toString()}, 'mysecretkey')
+  const token = await jwt.sign({_id: admin._id.toString()}, process.env.SECRET_KEY)
 
   admin.tokens = admin.tokens.concat({token})
 

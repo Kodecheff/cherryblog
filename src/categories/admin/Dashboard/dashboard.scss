@@ -1,0 +1,72 @@
+.dashboard{
+  display: flex;
+  position: relative;
+  h3{
+    margin-top: 15px;
+  }
+}
+.dashboard_sidebar{
+  flex-basis: 350px;
+  border: 1px solid red;
+  max-height: 700px;
+  height: 600px;
+  position: sticky;
+  ul{
+    line-height: 18px;
+    margin-top: 100px;
+    li{
+      padding: 10px;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  }
+}
+.dashboard_main_page{
+  width: 100%;
+  // border: 1px solid green;
+  text-align: center;
+}
+
+/* -------------- News table --------------- */
+.dashboard_main_page{
+  table{
+    // border: 1px solid blue;
+    margin: auto;
+    margin-top: 130px;
+    tr{
+      // border: 1px solid orange;
+      td{
+        // border: 1px solid orchid;
+        padding: 8px;
+        button{
+          padding: 3px 8px;
+          border: 1px solid black;
+          border-radius: 10px;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+/* --------------- Post form -------------- */
+.post_form{
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid black;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+  margin-top: 110px;
+  .input_field{
+    width: 290px;
+    border: 1px solid rgb(56, 55, 55);
+    margin: 10px 10px;
+    padding: 3px;
+  }
+  
+  button{
+    width: 75px;
+    margin: 10px 10px;
+  }
+}

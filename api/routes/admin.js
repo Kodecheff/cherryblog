@@ -48,11 +48,10 @@ router.post('/admin/logout', adminAuth, async (req, res) => {
 })
 
 /* ----------------- Get admin --------------- */
-router.get('/admin', adminAuth, async (req, res) => {
-  const admin = await Admin.find()
+router.get('/admin/me', adminAuth, async (req, res) => {
 
   try{
-    res.send(admin)
+    res.send(req.admin)
   }catch(e){
     res.status(500).send(e)
   }
@@ -176,7 +175,7 @@ router.post('/news/:id/image', adminAuth, upload.single('image'), async(req, res
 })
 
 /* -------------------- Get news image ------------------ */
-router.get('/news/:id/image', adminAuth, async (req, res) => {
+router.get('/news/:id/image', async (req, res) => {
   
   try{
     const news = await News.findOne({_id: req.params.id})
