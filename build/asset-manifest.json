@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cherryblog/static/css/main.7744b52b.chunk.css",
-    "main.js": "/cherryblog/static/js/main.4678e291.chunk.js",
-    "main.js.map": "/cherryblog/static/js/main.4678e291.chunk.js.map",
+    "main.js": "/cherryblog/static/js/main.21ac37cd.chunk.js",
+    "main.js.map": "/cherryblog/static/js/main.21ac37cd.chunk.js.map",
     "runtime-main.js": "/cherryblog/static/js/runtime-main.a02973e5.js",
     "runtime-main.js.map": "/cherryblog/static/js/runtime-main.a02973e5.js.map",
     "static/js/2.b460713c.chunk.js": "/cherryblog/static/js/2.b460713c.chunk.js",
     "static/js/2.b460713c.chunk.js.map": "/cherryblog/static/js/2.b460713c.chunk.js.map",
     "index.html": "/cherryblog/index.html",
-    "precache-manifest.fd8737635d9120bf656b5687e9c42b31.js": "/cherryblog/precache-manifest.fd8737635d9120bf656b5687e9c42b31.js",
+    "precache-manifest.ebfe7aec12dc785c329dd3b5745cbba5.js": "/cherryblog/precache-manifest.ebfe7aec12dc785c329dd3b5745cbba5.js",
     "service-worker.js": "/cherryblog/service-worker.js",
     "static/css/main.7744b52b.chunk.css.map": "/cherryblog/static/css/main.7744b52b.chunk.css.map",
     "static/js/2.b460713c.chunk.js.LICENSE.txt": "/cherryblog/static/js/2.b460713c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a02973e5.js",
     "static/js/2.b460713c.chunk.js",
     "static/css/main.7744b52b.chunk.css",
-    "static/js/main.4678e291.chunk.js"
+    "static/js/main.21ac37cd.chunk.js"
   ]
 }
