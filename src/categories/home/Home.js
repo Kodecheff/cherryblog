@@ -1,17 +1,35 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from'axios'
 import Navbar from '../../components/navbar';
 import Topnav from '../../components/topnav';
 import Footer from '../../components/footer';
-import './home.css'
+import './home.scss'
 
 function Home() {
-  const [news, setNews] = useState([])
+  const [latestNews, setLatestNews] = useState([])
+  const [generalhealth, setGeneralhealth] = useState([])
 
-  // fetch('localhost:4000/news')
-  // .then(res => {
-  //   // setNews(news)
-  //   console.log(news)
-  // })
+  useEffect(() => {
+    axios({
+      method: 'GET',
+      url: '/news',
+      headers: {'Content-Type': 'application/json'}
+    }).then(res => {
+      console.log(res.data)
+      setLatestNews(res.data)
+    })
+  },[setLatestNews])
+
+  useEffect(() => {
+    axios({
+      method: 'GET',
+      url: '/generalhealth',
+      headers: {'Content-Type': 'application/json'}
+    }).then(res => {
+      console.log(res.data)
+      setGeneralhealth(res.data)
+    })
+  },[setGeneralhealth])
 
   return(
     <div>
@@ -63,12 +81,15 @@ function Home() {
       <div className="category generalhealth">
         <div className="container-fluid">
           <h2>General Health</h2>
-
-          <div className="row">
-              <div className="headline"></div>
-              <div className="headline"></div>
-              <div className="headline"></div>
-          </div>
+          {generalhealth.map(news => {
+            return(
+              <div className="news-card">
+                <i>{news.category}</i>
+                <h2 className="news_headline">{news.headline}</h2>
+                <p className="news_content">{news.content}</p>
+              </div>
+            )
+          })}
         </div>
       </div>
 

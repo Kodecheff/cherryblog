@@ -1,0 +1,18 @@
+// @import  '../../scss/news_container.scss'
+
+.food-news{
+  padding: 10px 0px 100px 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  // border: 1px solid green;
+  margin: auto;
+  .news-card{
+    border: 1px solid black;
+    flex-basis: 250px;
+    height: 300px;
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+}

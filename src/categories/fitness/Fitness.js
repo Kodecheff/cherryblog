@@ -1,36 +1,49 @@
-import React, {Component} from 'react';
+import React, {useEffect, useState} from 'react';
 import Navbar from '../../components/navbar';
 import Topnav from '../../components/topnav';
 import Footer from '../../components/footer';
+import axios from 'axios'
+import './fitness.scss'
 
-class Fitness extends Component {
-  constructor(props) {
-    super(props)
+const Fitness = () => {
+  const [fitnessNews, setFitnessNews] = useState([])
 
-    this.state = {apiResponse: ""}
-  }
+  useEffect(() => {
+    axios({
+      method: 'GET',
+      url: '/fitness',
+      headers: {'Content-Type': 'application/json'}
+    })
+    .then(res => {
+      console.log(res.data)
+      setFitnessNews(res.data)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  }, [setFitnessNews])
 
-  callFitnessAPI() {
-    fetch('http://localhost:9000/fitness')
-    .then(res => res.text())
-    .then(res => this.setState({apiResponse: res}))
-  }
-
-  componentDidMount() {
-    this.callFitnessAPI()
-  }
-
-  render() {
-    return(
-      <div>
-        <Topnav />
-        <Navbar />
-        <h1>How do you keep fit?</h1>
-        <h2>{this.state.apiResponse}</h2>
-        <Footer />
+  return(
+    <div className="main_content">
+      <Topnav />
+      <Navbar />
+      <h1>Fitness news</h1>
+      <h2>All about that body goal!</h2>
+      <div className="fitness-news">
+      {fitnessNews.map(news => {
+        return(
+            <div className="news-card" key={news._id}>
+              <img src={`/news/${news._id}/image`} />
+              <i>{news.category}</i>
+              <h2 className="headline">{news.headline}</h2>
+              <p className="content">{news.content}</p>
+            </div>
+        )
+      })}
       </div>
-    )
-  }
+      <Footer />
+    </div>
+  )
 }
 
 export default Fitness
